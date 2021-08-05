@@ -1,7 +1,7 @@
 const { React } = require('powercord/webpack');
 const { SliderInput } = require('powercord/components/settings');
 
-module.exports = class LofiSettings extends React.PureComponent {
+module.exports = class LilSettings extends React.PureComponent {
 	render() {
 		const { getSetting, updateSetting } = this.props;
 		return (
@@ -12,7 +12,7 @@ module.exports = class LofiSettings extends React.PureComponent {
 				markers={[0, 25, 50, 75, 100]}
 				onValueChange={change => {
 					updateSetting('volume', change / 100);
-					window.sus.volume = change / 100;
+					window.lil.volume = change / 100;
 				}}
 			>
 				Volume
