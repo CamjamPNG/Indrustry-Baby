@@ -14,7 +14,7 @@ module.exports = class Lofi extends Plugin {
 		window.lil.play();
 		powercord.api.settings.registerSettings(this.entityID, {
 			category: this.entityID,
-			label: 'Music',
+			label: 'Industry Baby',
 			render: Settings,
 		});
 	}
